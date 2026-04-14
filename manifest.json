@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Odoo Support URL",
+  "version": "1.0",
+  "description": "Click the icon to go to /_odoo/support for the current database.",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_title": "Go to Odoo Support"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
