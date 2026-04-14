@@ -1,13 +1,19 @@
 {
   "manifest_version": 3,
-  "name": "Odoo Support URL",
+  "name": "odoo-slash-support",
   "version": "1.0",
-  "description": "Click the icon to go to /_odoo/support for the current database.",
+  "author": "Enock Maseru",
+  "description": "A lightweight Chrome extension for Odoo BAs to route to support pages and view server versions.",
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
   ],
   "action": {
-    "default_title": "Go to Odoo Support"
+    "default_title": "Odoo Support & Version"
   },
   "background": {
     "service_worker": "background.js"
