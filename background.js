@@ -71,8 +71,8 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
           }
           chrome.action.setBadgeBackgroundColor({ color: color, tabId: tabId });
 
-          // 3. HIDE THE ICON (Switch to transparent)
-          chrome.action.setIcon({ imageData: transparentIcon, tabId: tabId });
+          // 3. KEEP THE ICON VISIBLE (Use default icon instead of transparent)
+          chrome.action.setIcon({ imageData: defaultIcon, tabId: tabId });
 
           // 4. Set Tooltip
           chrome.action.setTitle({ 
